@@ -1,3 +1,64 @@
-<h1>
-  {{title}}
-</h1>
+<app-header></app-header>
+
+<main>
+        
+        <section>
+            <h2>Ma liste de course</h2>
+            <ul id="productList">
+                <li id="blackProductList">
+                    Ajouter un produit...
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Ajouter un produit</h2>
+            <form>
+
+                <fieldset>
+                    <legend>Type de produit</legend>
+                    <article>
+                        <label for="productType">Catégorie</label>
+                        <select id="productType">
+                            <option value="null" selected>Sélectionner</option>
+                            <option value="legume">Légume</option>
+                            <option value="fruit">Fruit</option>
+                            <option value="viande">Viande</option>
+                            <option value="poisson">Poisson</option>
+                            <option value="divers">Divers</option>
+                        </select>
+                    </article>
+
+                    <article>
+                        <label for="productName">Nom</label>
+                        <input type="text" id="productName" placeholder="Obligatoire">
+                    </article>
+                </fieldset>
+
+                <fieldset>
+                    <legend>A propos</legend>
+                    <article>
+                        <label for="productComment">Commentaire</label>
+                        <textarea id="productComment" placeholder="quantité, format..."></textarea>
+                    </article>
+                    <article>
+                        <label for="productOption">Option</label>
+                        <ul>
+                            <li><input type="checkbox" id="cboxPetitDej" value="petitDej"> Petit déjeuné</li>
+                            <li><input type="checkbox" id="cboxDejeune" value="dejeune"> Déjeuné</li>
+                            <li><input type="checkbox" id="cboxDiner" value="diner"> Diner</li>
+                            <li><input type="checkbox" id="cboxReserve" value="reserve"> Reserve</li>
+                        </ul>
+                    </article>
+                </fieldset>
+
+                <input type="submit" value="Ajouter">
+
+            </form>
+        </section>
+
+        
+
+    </main>
+
+<app-footer></app-footer>
